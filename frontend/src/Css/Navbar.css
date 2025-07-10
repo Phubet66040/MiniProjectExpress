@@ -1,0 +1,277 @@
+.navbar {
+    background-color: #1f2937;
+   
+}
+
+.navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+@media (min-width: 640px) {
+    .navbar-container {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-container {
+        padding: 0 32px;
+    }
+}
+
+.navbar-content {
+    position: relative;
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 640px) {
+    .mobile-menu-button {
+        display: none;
+    }
+}
+
+.hamburger-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 8px;
+    color: #9ca3af;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hamburger-button:hover {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+.hamburger-button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 640px) {
+    .main-content {
+        justify-content: flex-start;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-image {
+    height: 32px;
+    width: auto;
+}
+
+.desktop-menu {
+    display: none;
+    margin-left: 24px;
+}
+
+@media (min-width: 640px) {
+    .desktop-menu {
+        display: block;
+    }
+}
+
+.menu-links {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-link {
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #d1d5db;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.right-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+    gap: 12px;
+}
+
+@media (min-width: 640px) {
+    .right-content {
+        position: static;
+        margin-left: 24px;
+        padding-right: 0;
+    }
+}
+
+.notification-button {
+    position: relative;
+    border-radius: 50%;
+    background-color: #1f2937;
+    padding: 4px;
+    color: #9ca3af;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.notification-button:hover {
+    color: #ffffff;
+}
+
+.notification-button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.user-menu-container {
+    position: relative;
+    margin-left: 12px;
+}
+
+.user-button {
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    background-color: #1f2937;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.user-button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.user-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.user-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 8px;
+    width: 192px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 4px 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #374151;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f3f4f6;
+}
+
+.mobile-menu {
+    display: block;
+}
+
+@media (min-width: 640px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 8px 12px 8px;
+}
+
+.mobile-link {
+    display: block;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #d1d5db;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.mobile-link:hover {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+.mobile-link.active {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
