@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Css/Navbar.css';
-
+import logo from '../assets/react.svg';
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
@@ -58,8 +58,8 @@ const Navbar = () => {
                             <div className="logo">
                                 <img 
                                     className="logo-image" 
-                                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" 
-                                    alt="Your Company" 
+                                    src= {logo}
+                                    alt="KunchaExpress" 
                                 />
                             </div>
 
@@ -67,8 +67,7 @@ const Navbar = () => {
                             <div className="desktop-menu">
                                 <div className="menu-links">
                                     <a href="#" className="nav-link active">Dashboard</a>
-                                    <a href="#" className="nav-link">Team</a>
-                                    <a href="#" className="nav-link">Projects</a>
+                                    <a href="#" className="nav-link">MAP</a>
                                     <a href="#" className="nav-link">Calendar</a>
                                 </div>
                             </div>
