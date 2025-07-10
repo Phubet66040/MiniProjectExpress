@@ -66,9 +66,9 @@ const Navbar = () => {
                             {/* Desktop menu */}
                             <div className="desktop-menu">
                                 <div className="menu-links">
-                                    <a href="#" className="nav-link active">Dashboard</a>
-                                    <a href="#" className="nav-link">MAP</a>
-                                    <a href="#" className="nav-link">Calendar</a>
+                                    <a href="/" className="nav-link active">Dashboard</a>
+                                    <a href="/Map" className="nav-link">MAP</a>
+                                    <a href="/Calendar" className="nav-link">Calendar</a>
                                 </div>
                             </div>
                         </div>
