@@ -1,7 +1,7 @@
 import React from 'react'
 import DashboardCard from '../Component/DashboardCard.jsx';
 import { FaTruck, FaClock, FaExclamationTriangle, FaCheck } from 'react-icons/fa';
-import MapView from '../Component/MapView';
+
 
 
 const Home = () => {
@@ -33,10 +33,7 @@ const Home = () => {
           bgColor="bg-red-500"
         />
       </div>
-      <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4">📍 แผนที่ติดตามรถขนส่ง</h1>
-        <MapView />
-      </div>
+      
     </div>
   )
 }

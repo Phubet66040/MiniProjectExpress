@@ -4,6 +4,7 @@ import '../Css/App.css'
 
 import Home from '../Pages/Home';
 import Navbar from '../Component/Navbar';
+import Map from './Map';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Home />} />
+        <Route path="/map" element={<Map />} />
       </Routes>
     </Router>
   )
